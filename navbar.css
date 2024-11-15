@@ -1,0 +1,39 @@
+
+.navbar {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background: linear-gradient(to bottom, #0077cc, #0055a3); /* Blue gradient for navbar */
+  width: 200px;
+  padding: 20px;
+  opacity: 0; /* Start with opacity set to 0 (hidden) */
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+  z-index: 1;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2); /* Slight shadow for depth */
+}
+
+/* Show the navbar on hover */
+.navbar:hover {
+  opacity: 1; /* On hover, set opacity to 1 (visible) */
+}
+
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+
+
+/* Show the navbar on hover */
+
