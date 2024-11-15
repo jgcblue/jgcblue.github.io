@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- This is the way to import the css files you don't have to add ./ in front -->
+    <link rel="stylesheet" type="text/css" href="landingAndanimation.css">
+
+    <style>
+.navbar {
+    font-size:22px;
+    position: fixed;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: linear-gradient(to bottom, #0077cc, #0055a3);
+    background: linear-gradient(to bottom, #0077cc, #9b59b6); /* Gradient from blue to pinkish purple */
+
+    width: auto; /* Adjust width to content */
+    max-width: 200px; /* Set a maximum width */
+    padding: 20px;
+    opacity: 1; /* Make it visible by default */
+    z-index: 1;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+    white-space: normal; /* Allow text to wrap */
+    overflow-wrap: break-word; /* Break long words if necessary */
+}
+
+.navbar ul.sub-menu {
+    display: none;
+    font-size:18px;
+    background: #0055a3;
+    padding: 10px;
+    position: absolute;
+    left: -100px; /* Position it to the left of the main menu */
+    down:-100px;
+    top: 0;
+    width: 200px;
+    z-index: 10; /* Ensure it's above other elements */
+}
+
+.navbar li.has-submenu:hover > ul.sub-menu {
+    display: block;
+}
+navbar li {
+	margin:0;
+}
+.navbar ul.sub-menu {
+		        top: -10px; /* Adjust this value to align the submenu with its parent menu
+				       item */
+				    /* ... other styles ... */
+				
+	    }
+    </style>
+</head>
+
+<body>
+    <img src="cd3.jpg" width="100%" height="300">
+
+
+
+    <nav class="navbar">
+        <ul class="main-menu">
+            <li><a href="#">Home</a></li>
+            <li class="has-submenu">
+                <a href="#">Data Analysis and Time Series (Stastics too!)</a>
+		<ul class="sub-menu">
+<li>
+			<a href="aInsomnia_Part_1.html"> Adolescent Insomnia Study </a></li>
+<li> <a href="ma_linearRegression_1.html " target="_blank">Anchor Text</a></li>
+<li>
+			<a href="mhde.html">Mental Health Data Exploration</a>
+</li>
+			<a href="http://crime.redbeginning.online/dashapp">Crime Dashboard Project</a>
+			<a href="Sentiment_analysis_and_flask.html"> Sentiment Analysis (Classifiers)</a>
+</ul>
+</li>
+            <li class="has-submenu">
+                <a href="#">Machine Learning Articles </a>
+                <ul class="sub-menu">
+                    <li><a href="Sentiment_analysis_and_flask.html"> Sentiment Analysis Classifier</a></li>
+
+                    <li><a href="martclassifier.html"> Math Text Classification </a></li>
+		<li><a href="twittertalk.html"> Twitter Usage and Age(ML)</a></li>
+                </ul>
+            </li>
+            <li class="has-submenu">
+                <a href="#">Assorted Quantitative Articles</a>
+                <ul class="sub-menu">
+                    <li><a href="ma_linearRegression_1.html"> Linear Regression Basics</a></li>
+
+                    <li><a href="#"></a></li>
+                </ul>
+            </li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <div class="landing-page" style="padding-top: 200px">
+        <div class="text-container">
+            <div class="animated-text">
+                <h1>Welcome!</h1>
+            </div>
+            <div class="standard-text">
+                <h1>Welcome to the Data</h1>
+		<div style="width:60%; margin:auto; text-align: center;font-size:30px">
+
+		Welcome to My Data Science Portfolio
+Hello and thank you for stopping by! I'm thrilled to share with you a collection of my work that spans various domains of Data Analysis and Machine Learning.
+
+<br></br>
+
+Each project is a testament to my passion for understanding the mathematical and statistical intricacies of real-world problems and crafting intuitive tools to harness this knowledge.
+
+Whether you're a fellow data enthusiast, a business looking for insights, or just curious, I invite you to explore and delve into the projects above.
+
+<br></br>
+
+My goal has always been to assist individuals and businesses in grasping the mathematical and statistical dynamics of their challenges.
+
+<br></br>
+
+By doing so, I aim to provide them with tools that encapsulate this understanding in an accessible and user-friendly manner.
+
+<br></br>
+
+Your feedback and questions are invaluable to me. If you have any inquiries or if there's any way I
+can assist you further, please don't hesitate to reach out at jgcblue9558@gmail.com or (818)
+747-8150.
+<br></br>
+
+Warm regards,
+<br></br>
+Jose G. Chavez (P.h.D)
+		</div>
+
+
+                <div class="binary-animation">
+                    <div class="binary-digits">
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                        <p class="binary-digit">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const binaryDigits = document.querySelectorAll(".binary-digit");
+
+            function updateBinary() {
+                binaryDigits.forEach(digit => {
+                    digit.innerText = Math.round(Math.random());
+                });
+            }
+            setInterval(updateBinary, 200);
+        });
+    </script>
+</body>
+</html>
+
+
