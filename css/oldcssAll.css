@@ -1,0 +1,336 @@
+a{
+color:white;
+}
+ a:link {
+	   color: white;
+	     background-color: transparent;
+	       text-decoration: none;
+	       
+ }
+
+ canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.ct-row {
+  margin-left: -5px;
+  margin-right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ct-sectional-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 5px 5px 5px;
+}
+
+.ct-sectional-box .title {
+  font-family: Arial Narrow, Arial, sans-serif;
+  font-weight: 600;
+  position: relative;
+  font-size: 24px;
+  margin: 5px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 0.9;
+  min-height: 87px;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.ct-sectional-box .title::after {
+  content: '';
+  background-color:black;
+  width: 14px;
+  height: 27px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -13.5px;
+}
+
+.ct-sectional-box .title a {
+  display: block;
+  padding: 10px 100px 10px 34px;
+  max-width: 100%;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.ct-sectional-box .title a:hover {
+  text-decoration: none;
+}
+
+.ct-sectional-box .inner {
+  background: black;
+  color:white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.ct-sectional-box ul {
+  font-size: 18px;
+  padding: 30px 20px 30px 55px;
+}
+
+ul > li,
+ol > li {
+  padding: 6px 0;
+}
+
+.ct-sectional-box ul a {
+  text-decoration: underline;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #00689b;
+}
+
+.ct-sectional-box ul a:hover {
+  color: #00719b;
+}
+
+/* box blue */
+
+.ct-sectional-box--blue .title {
+  background: black;
+  color: #fff;
+}
+
+.ct-sectional-box--blue .title:hover {
+  background: black;
+}
+
+/* box red */
+
+.ct-sectional-box--red .title {
+  background: black;
+  color: #fff;
+}
+
+.ct-sectional-box--red .title:hover {
+  background: black;
+}
+/* box purple*/
+
+.ct-sectional-box--purple .title {
+  background: black;
+  color:white;
+}
+
+
+/* box green */
+
+.ct-sectional-box--green .title {
+  background: black;
+  color:white;
+}
+
+.ct-sectional-box--green .title:hover {
+  background: black;
+}
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+  .ct-sectional-box {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33.3333%;
+    flex: 1 1 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (max-width: 991px) {
+  .ct-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.btn-group button {
+	  background-color: black;
+	      color: white; /* White text */
+	        padding: 10px 24px; /* Some padding */
+		  cursor: pointer; /* Pointer/hand icon */
+/*		    float: left; /* Float the buttons side by side */*/
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+	  content: "";
+	    clear: both;
+	      display: table;
+}
+
+.btn-group button:not(:last-child) {
+	  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+	  background-color: black;
+}
+.blink_me {
+	  animation: blinker 1s linear infinite;
+	  
+}
+
+.center {
+	  display: block;
+	    margin-left: auto;
+	      margin-right: auto;
+	        width: 100%;
+}
+li{
+	font-weight:300;
+}
+ 
+ul {
+	list-style:none;
+	font-weight:500;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#bibQuote{
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+}
+#bimgOne {
+    animation: blink 3s;
+    animation-iteration-count: infinite;
+}
+#bimgTwo{
+    animation: blink 1s;
+    animation-iteration-count: infinite;
+}
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+.jim {
+display: flex;
+justify-content: center;
+}
+
+.container{
+padding:50px;
+}
+.row {
+display: -webkit-box;
+display: -webkit-flex;
+display: -ms-flexbox;
+display:         flex;
+flex-wrap: wrap;
+}
+.row > [class*='col-'] {
+display: flex;
+flex-direction: column;
+}
+.center {
+padding: 30px 0;
+border:2px;
+text-align: center;
+}
+
+
+
+#tjnav{
+padding-top:300px;
+display:block;
+float:left;
+position:fixed;
+font-size: 25px;
+font-weight:300;
+padding: 5px;;
+width: 130px;
+z-index: 100;
+height: 100%; /* This will make it span from top to bottom */
+ background-color: #333; /* You can choose your desired background color */
+ overflow-x: hidden; /* This will hide any overflow on the x-axis */
+ padding: 8px 0; /* Some padding for aesthetics */
+}
+
+
+body{
+background-image:url('mb.jpeg'); 
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
+ background-position: center;
+ color:white;
+ font-weight:400;
+    }
+    body::before{
+	      opacity: 0.6;
+    }
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+        .content {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        ul {
+            padding-left: 20px;
+        }

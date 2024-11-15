@@ -1,0 +1,31 @@
+.navbar {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  background-color: #333;
+  width: 200px;
+  padding: 20px;
+  opacity: 0; /* Start with opacity set to 0 */
+  transition: opacity 0.3s ease; /* Smooth transition effect */
+  z-index: 1;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.navbar li {
+  margin-bottom: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Show the navbar on hover */
+.navbar:hover {
+  opacity: 1; /* On hover, set opacity to 1 */
+}

@@ -1,0 +1,81 @@
+#tjnav {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-weight: 300;
+    width: 100%;
+    z-index: 100;
+    height: 100px;
+    background-image: linear-gradient(to bottom, #8A2BE2, #FFD700);
+    overflow-x: hidden;
+    padding: 8px 0;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
+    flex-wrap: wrap;
+}
+#tjnav a:last-child {
+    border-right: none; /* Remove the right border from the last navbar item */
+}
+
+#tjnav a {
+	    border-right: 1px solid white; /* Add a right border to each navbar item */
+
+    flex-grow: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+#tjnav a:hover {
+    background-color: #555;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) {
+    #tjnav {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    #tjnav a {
+        padding: 15px;
+        white-space: normal; /* Allow the text to wrap to multiple lines */
+    }
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    #tjnav {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    #tjnav a {
+        padding: 10px;
+        white-space: nowrap; /* Prevent the text from wrapping to multiple lines */
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    #tjnav {
+        justify-content: space-between;
+    }
+
+    #tjnav a {
+        padding: 10px 20px;
+    }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    #tjnav a {
+        padding: 10px 30px;
+    }
+}
+

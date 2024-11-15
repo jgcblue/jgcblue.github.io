@@ -1,0 +1,182 @@
+section {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+.ct-row {
+  margin-left: -5px;
+  margin-right: -5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.ct-sectional-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0 5px 5px 5px;
+}
+
+.ct-sectional-box .title {
+  font-family: Arial Narrow, Arial, sans-serif;
+  font-weight: 600;
+  position: relative;
+  font-size: 24px;
+  margin: 5px 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 0.9;
+  min-height: 87px;
+  text-transform: uppercase;
+  -webkit-transition: background-color 0.15s ease-in-out;
+  transition: background-color 0.15s ease-in-out;
+}
+
+.ct-sectional-box .title::after {
+  content: '';
+  background-color:black;
+  width: 14px;
+  height: 27px;
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  margin-top: -13.5px;
+}
+
+.ct-sectional-box .title a {
+  display: block;
+  padding: 10px 100px 10px 34px;
+  max-width: 100%;
+  color: inherit;
+  position: relative;
+  z-index: 1;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.ct-sectional-box .title a:hover {
+  text-decoration: none;
+}
+
+.ct-sectional-box .inner {
+  background: black;
+  color:white;
+  -webkit-box-flex: 1;
+  -ms-flex: 1 0 auto;
+  flex: 1 0 auto;
+}
+
+.ct-sectional-box ul {
+  font-size: 18px;
+  padding: 30px 20px 30px 55px;
+}
+
+ul > li,
+ol > li {
+  padding: 6px 0;
+}
+
+.ct-sectional-box ul a {
+  text-decoration: underline;
+  font-family: Tahoma, Verdana, Segoe, sans-serif;
+  color: #00689b;
+}
+
+.ct-sectional-box ul a:hover {
+  color: #00719b;
+}
+
+/* box blue */
+
+.ct-sectional-box--blue .title {
+  background: black;
+  color: #fff;
+}
+
+.ct-sectional-box--blue .title:hover {
+  background: black;
+}
+
+/* box red */
+
+.ct-sectional-box--red .title {
+  background: black;
+  color: #fff;
+}
+
+.ct-sectional-box--red .title:hover {
+  background: black;
+}
+/* box purple*/
+
+.ct-sectional-box--purple .title {
+  background: black;
+  color:white;
+}
+
+
+/* box green */
+
+.ct-sectional-box--green .title {
+  background: black;
+  color:white;
+}
+
+.ct-sectional-box--green .title:hover {
+  background: black;
+}
+
+/* Media Queries */
+
+@media (min-width: 992px) {
+  .ct-sectional-box {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 33.3333%;
+    flex: 1 1 33.3333%;
+    max-width: 33.3333%;
+  }
+}
+
+@media (max-width: 991px) {
+  .ct-row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+.btn-group button {
+	  background-color: black;
+	      color: white; /* White text */
+	        padding: 10px 24px; /* Some padding */
+		  cursor: pointer; /* Pointer/hand icon */
+/*		    float: left; /* Float the buttons side by side */*/
+}
+
+/* Clear floats (clearfix hack) */
+.btn-group:after {
+	  content: "";
+	    clear: both;
+	      display: table;
+}
+
+.btn-group button:not(:last-child) {
+	  border-right: none; /* Prevent double borders */
+}
+
+/* Add a background color on hover */
+.btn-group button:hover {
+	  background-color: black;
+}

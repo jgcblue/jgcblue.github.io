@@ -1,0 +1,22 @@
+
+# Example usage
+template_content = """
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Template</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+</body>
+</html>
+"""

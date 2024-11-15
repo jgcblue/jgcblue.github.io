@@ -1,0 +1,73 @@
+.center-text {
+	padding-left:200px;
+	padding-right:100px;
+    justify-content: center;
+    text-align: center;
+}
+.custom-container {
+v {
+top: 10%;
+color: white;
+display: block;
+float: left;
+position: fixed;
+font-size: 25px;
+font-weight: 200;
+padding: 5px;
+width: 130px;
+z-index: 100;
+height: 80%; /* This will make it span from top to bottom */
+background: linear-gradient(to bottom right, #FFD6E8, #87CEFA);
+overflow-x: hidden; /* This will hide any overflow on the x-axis */
+padding: 8px 0; /* Some padding for aesthetics */
+transition: background-color 0.3s ease; /* Transition effect */
+}
+
+/* Styles for navbar links */
+#tjnav a {
+text-decoration: none;
+color: white;
+display: block;
+padding: 10px;
+}
+
+/* Hover effect for navbar links */
+#tjnav a:hover {
+background-color: #555;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+#tjnav {
+/* Add styling for smaller screens */
+}
+}
+background: linear-gradient(to bottom right, #FFD6E8, #87CEFA);
+
+padding: 40px;
+border-radius: 10px;
+
+}v {
+top: 10%;
+color: white;
+display: block;
+float: left;
+position: fixed;
+font-size: 25px;
+font-weight: 200;
+padding: 5px;
+width: 130px;
+z-index: 100;
+height: 80%; /* This will make it span from top to bottom */
+background: linear-gradient(to bottom, #333, #222); /* Gradient background */
+overflow-x: hidden; /* This will hide any overflow on the x-axis */
+padding: 8px 0; /* Some padding for aesthetics */
+transition: background-color 0.3s ease; /* Transition effect */
+}
+
+#ssmain{
+
+line-height:2em;
+}
+
+

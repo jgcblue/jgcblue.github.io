@@ -1,0 +1,82 @@
+body {
+color:black;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to bottom, #e6f2ff, #c8e0ff); /* Light blue gradient background */
+}
+
+.binary-animation {
+  text-align: center;
+  font-size: 48px;
+  color: #0f0; /* Keeping the animated text green */
+  color:red;
+}
+
+.binary-digit {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.landing-page {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-container {
+  text-align: center;
+}
+
+.animated-text h1 {
+  font-size: 80px;
+  font-weight: bold;
+  opacity: 1;
+  animation: animateText 2s forwards;
+  color: #0077cc; /* Slightly deeper blue for headers */
+}
+
+.standard-text {
+  font-size: 30px;
+  font-weight: normal;
+  opacity: 0;
+  animation: fadeInText 5s forwards;
+  color: #666; /* Darker text for paragraphs */
+}
+
+.standard-text p {
+  font-size: 25px;
+}
+
+.standard-text h1 {
+  font-size: 40px;
+  font-weight: normal;
+  opacity: 0;
+  animation: fadeInText 5s forwards;
+  color: #0077cc; /* Slightly deeper blue for headers */
+}
+
+@keyframes animateText {
+  0% {
+    font-size: 80px;
+    opacity: 1;
+  }
+  100% {
+    font-size: 30px;
+    opacity: 0;
+  }
+}
+
+@keyframes fadeInText {
+  0% {
+    font-size: 40px;
+    opacity: 0;
+  }
+  100% {
+    font-size: 40px;
+    opacity: 1;
+  }
+}
+

@@ -1,0 +1,29 @@
+        .sidenav {
+            height: 100%;
+            width: 250px;
+            position: fixed;
+            top: 0;
+            right: 0;
+            background-color: #111;
+            padding-top: 20px;
+        }
+
+        /* Style for the links within the side navigation bar */
+        .sidenav a {
+            padding: 10px 8px 10px 16px;
+            text-decoration: none;
+            font-size: 18px;
+            color: black;
+            display: block;
+        }
+
+        /* Change the color of the links when hovered */
+        .sidenav a:hover {
+            background-color: #575757;
+        }
+
+        /* Style for the main content area */
+        .main-content {
+            margin-right: 270px; /* Adjust this value to match the width of the sidenav */
+            padding: 20px;
+        }
